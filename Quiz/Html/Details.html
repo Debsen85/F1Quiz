@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @font-face { font-family: Formula1; src: url('Formula1-Wide.ttf'); } 
+            h1 
+            {
+                font-family: Formula1
+            }
+        </style> 
+        <meta charset="-utf8"/>    
+        <title>Formula 1 Quiz</title>  
+        <link rel="stylesheet" href="Details.css">
+        <link rel = "icon" href ="F1.png" type = "image/x-icon">         
+        <h1 style="text-align: center; color: red; text-shadow: 3px 3px black; line-height: 40px;">Formula 1 Quiz</h1>
+    </head>
+    <body style="background-image: url('Details.jpg');background-size: cover; opacity: 0.8;"> 
+        <div id="div1" style="background-color: black; margin-left: 15%; margin-right: 15%;">
+            <div id="div2">                
+                <p id="p1" style="text-align: center;">
+                    Please enter the required details below to take the quiz.
+                </p>
+                <form id="div3" action="http:localhost/Quiz/Quiz.php" method="POST">
+                    <input name="name" class="inp" type="text" placeholder="Name" required><br><br>
+                    <input name="age" class="inp" type="number" placeholder="Age" required><br><br>
+                    <input name="country" class="inp" type="text" placeholder="Country" required>
+                    <input name="Submit" id="submit" type="submit" value="Take the Quiz"> 
+                </form>
+            </div>                       
+        </div>       
+    </body>    
+</html>
